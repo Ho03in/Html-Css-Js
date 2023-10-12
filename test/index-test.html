@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ads-container">
+        <div class="ad card">آگهی 1</div>
+        <div class="ad card">آگهی 2</div>
+        <div class="ad card">آگهی 3</div>
+        <div class="ad card">آگهی 4</div>
+        <!-- بیشتر آگهی‌ها از اینجا ادامه می‌یابند -->
+    </div>
+    <button id="load-more-button">نمایش بیشتر</button>
+    
+
+    <script>
+        // متغیرها
+const adsContainer = document.getElementById('ads-container');
+const loadMoreButton = document.getElementById('load-more-button');
+
+// تعداد آگهی‌هایی که هر بار نمایش داده می‌شوند
+const adsPerLoad = 3;
+
+// تعداد آگهی‌های نمایش داده شده
+let displayedAds = adsPerLoad;
+
+// اخفا کردن آگهی‌های اضافی در ابتدا
+const hiddenAds = Array.from(adsContainer.querySelectorAll('.ad')).slice(displayedAds);
+hiddenAds.forEach(ad => ad.classList.add('hidden'));
+
+// اضافه کردن رویداد کلیک به دکمه "نمایش بیشتر"
+loadMoreButton.addEventListener('click', function () {
+    // نمایش آگهی‌های بیشتر
+    displayedAds += adsPerLoad;
+    const adsToShow = Array.from(adsContainer.querySelectorAll('.hidden')).slice(0, adsPerLoad);
+    adsToShow.forEach(ad => ad.classList.remove('hidden'));
+
+    // اخفا دکمه اگر آگهی‌های بیشتری وجود نداشته باشد
+    if (adsToShow.length === 0) {
+        loadMoreButton.style.display = 'none';
+    }
+});
+
+    </script>
+    
+</body>
+</html>

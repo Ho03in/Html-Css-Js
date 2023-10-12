@@ -1,0 +1,63 @@
+/* /*=============== 
+Fonts
+===============
+*/
+
+@font-face {
+    font-family: "vazir" ;
+    src: url(../fonts/vazir/Vazir-Medium-FD-WOL.woff2) format("woff2"),
+            url(../fonts/vazir/Vazir-Medium-FD-WOL.woff) format("woff"),
+                url( ../fonts/vazir/Vazir-Medium-FD-WOL.ttf) format("true tape");
+}
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+    --clr-dark-0: #1c1c28;
+    --clr-dark-1: #28293d;
+    --clr-dark-2: #555770;
+    --clr-dark-3: #8f90a6;
+    --clr-primary-1: #6698fa;
+    --clr-primary-2: #3e7bfa;
+    --clr-primary-3: #0063f7;
+    --clr-primary-4: #004fc4;
+    --clr-grey-1: #102a42;
+    --clr-grey-2: #617d98;
+    --clr-grey-3: #9eb2c7;
+    --clr-grey-4: #f1f5f8;
+    --clr-white: #fff;
+    --ff-primary: "vazir", sans-serif;
+    --transition: all 0.3s linear;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/*
+=============== 
+header
+===============
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.d-flex{
+    display: flex;
+}
+.d-grid{
+    display: grid;
+}
