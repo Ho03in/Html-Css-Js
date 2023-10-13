@@ -1,50 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="ads-container">
-        <div class="ad card">آگهی 1</div>
-        <div class="ad card">آگهی 2</div>
-        <div class="ad card">آگهی 3</div>
-        <div class="ad card">آگهی 4</div>
-        <!-- بیشتر آگهی‌ها از اینجا ادامه می‌یابند -->
+    <div class="container">
+        <h2>ثبت آگهی</h2>
+        <form id="ad-form">
+            <label for="title">عنوان:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="description">توضیحات:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="price">قیمت (تومان):</label>
+            <input type="number" id="price" name="price" required>
+            
+            <label for="category">دسته بندی:</label>
+            <select id="category" name="category">
+                <option value="electronics">الکترونیک</option>
+                <option value="furniture">مبلمان</option>
+                <option value="clothing">پوشاک</option>
+                <option value="other">سایر</option>
+            </select>
+            
+            <label for="image">تصویر:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            
+            <button type="submit">ثبت آگهی</button>
+        </form>
     </div>
-    <button id="load-more-button">نمایش بیشتر</button>
-    
+    <script src="script.js">
+        document.addEventListener('DOMContentLoaded', function () {
+    const adForm = document.getElementById('ad-form');
 
-    <script>
-        // متغیرها
-const adsContainer = document.getElementById('ads-container');
-const loadMoreButton = document.getElementById('load-more-button');
-
-// تعداد آگهی‌هایی که هر بار نمایش داده می‌شوند
-const adsPerLoad = 3;
-
-// تعداد آگهی‌های نمایش داده شده
-let displayedAds = adsPerLoad;
-
-// اخفا کردن آگهی‌های اضافی در ابتدا
-const hiddenAds = Array.from(adsContainer.querySelectorAll('.ad')).slice(displayedAds);
-hiddenAds.forEach(ad => ad.classList.add('hidden'));
-
-// اضافه کردن رویداد کلیک به دکمه "نمایش بیشتر"
-loadMoreButton.addEventListener('click', function () {
-    // نمایش آگهی‌های بیشتر
-    displayedAds += adsPerLoad;
-    const adsToShow = Array.from(adsContainer.querySelectorAll('.hidden')).slice(0, adsPerLoad);
-    adsToShow.forEach(ad => ad.classList.remove('hidden'));
-
-    // اخفا دکمه اگر آگهی‌های بیشتری وجود نداشته باشد
-    if (adsToShow.length === 0) {
-        loadMoreButton.style.display = 'none';
-    }
+    adForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        // اینجا می‌توانید کد JavaScript برای ارسال آگهی به سرور را اضافه کنید.
+        alert('آگهی با موفقیت ثبت شد.');
+        adForm.reset(); // پس از ارسال فرم، فرم را بازنشانی می‌کنیم.
+    });
 });
 
     </script>
-    
 </body>
 </html>
