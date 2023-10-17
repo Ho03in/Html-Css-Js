@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "vazir";
+  src: url(../fonts/vazir/Vazir-Medium-FD-WOL.woff2) format("woff2"),
+    url(../fonts/vazir/Vazir-Medium-FD-WOL.woff) format("woff"),
+    url(../fonts/vazir/Vazir-Medium-FD-WOL.ttf) format("true tape");
+}
+
+:Root {
+  --ff-primary: "vazir", sans-serif;
+}
+
+.header {
+  font-family: var(--ff-primary);
+  width: 95%;
+  height: 105px;
+  background-color: rgba(240, 240, 240,0.8);
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 1;
+  position: fixed;
+  top: 20px;
+  right: 45px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.logo-text a{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.background-image {
+  position: relative;
+
+
+  color: #fff;
+  /* رنگ متن و محتوای وب‌سایت در پس‌زمینه */
+  text-align: center;
+  /* متن و محتوا در وسط پس‌زمینه قرار می‌گیرد */
+}
+
+.image {
+  background-image: url('U-I2.jpg');
+  /* مسیر تصویر پس‌زمینه */
+  background-size: cover;
+  /* تصویر پس‌زمینه به اندازه مناسب نمایش داده می‌شود */
+  background-position: center;
+  /* تصویر در وسط پس‌زمینه قرار می‌گیرد */
+  height: 100vh;
+  /* ارتفاع مورد نظر برای پس‌زمینه */
+  width: 100%;
+
+}
+
+.alert {
+  width: 700px;
+  height: 450px;
+  background: linear-gradient(210deg, rgba(238, 2, 2, 0.3), rgba(47, 86, 255, 0.2));
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeIn 5s forwards;
+  display: inline-block;
+  -webkit-animation: fadeIn 5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.button {
+  /*width: 25%;
+  height: 30px;
+  */font-family: var(--ff-primary);
+  margin-top: 60px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: rgba(0, 99, 247,0.7);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 25%px;
+  transition: all 0.5s;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-left: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+.alert-img {
+  width: 110px;
+  height: 110px;
+  clip-path: circle(50% at 50% 50%);
+  margin-top: 30px;
+}
+
+p {
+  font-family: var(--ff-primary);
+  margin-top: 65px;
+  font-size: 30px;
+}

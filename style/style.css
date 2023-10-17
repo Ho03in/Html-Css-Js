@@ -102,9 +102,9 @@ ul{
     max-width: 1300px;
     margin: 0 70px;
 }
-img{
+/* img{
     max-width: 100%;
-}
+} */
 .header{
     font-family: "Abasan";
     display: grid;
@@ -471,9 +471,12 @@ opacity: 0.7;
     width: 50px;
     height: 50px;
 }
+.footer-icon{
+    padding: 0 18px;
+}
 .footer-icon img{
-    width: 30px;
-    height: 30px;
+    width: 33px;
+    height: 33px;
     margin: 0 15px;
 }
 .down-footer{
@@ -515,3 +518,63 @@ opacity: 0.7;
 .hidden {
     display: none;
 }
+.apps-android{
+    display: grid;
+    grid-template-columns: 80% auto;
+}
+.apps-ios{
+    display: grid;
+    grid-template-columns: 100% auto;
+}
+.apps-all{
+    display: grid;
+    grid-template-columns: 100% auto;
+}
+.icon{
+    position: relative;
+}
+
+.icon img{
+    position: absolute;
+    bottom: 0px;
+    right: 6px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.icon>img:hover { transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+}
+.p-all{
+    padding: 5px 0;
+}
+.icon-none{
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+  }
+.icon-none:hover{
+    transform: scale(1.1);
+  }
+  .footer-icon>img{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+  .footer-icon>img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+  

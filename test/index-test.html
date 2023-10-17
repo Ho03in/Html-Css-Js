@@ -1,47 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <title>لیست بازشونده با رنگ تغییر دهنده</title>
+  <link rel="stylesheet" type="text/css" href="style-test.css">
 </head>
 <body>
-    <div class="container">
-        <h2>ثبت آگهی</h2>
-        <form id="ad-form">
-            <label for="title">عنوان:</label>
-            <input type="text" id="title" name="title" required>
-            
-            <label for="description">توضیحات:</label>
-            <textarea id="description" name="description" required></textarea>
-            
-            <label for="price">قیمت (تومان):</label>
-            <input type="number" id="price" name="price" required>
-            
-            <label for="category">دسته بندی:</label>
-            <select id="category" name="category">
-                <option value="electronics">الکترونیک</option>
-                <option value="furniture">مبلمان</option>
-                <option value="clothing">پوشاک</option>
-                <option value="other">سایر</option>
-            </select>
-            
-            <label for="image">تصویر:</label>
-            <input type="file" id="image" name="image" accept="image/*">
-            
-            <button type="submit">ثبت آگهی</button>
-        </form>
-    </div>
-    <script src="script.js">
-        document.addEventListener('DOMContentLoaded', function () {
-    const adForm = document.getElementById('ad-form');
-
-    adForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        // اینجا می‌توانید کد JavaScript برای ارسال آگهی به سرور را اضافه کنید.
-        alert('آگهی با موفقیت ثبت شد.');
-        adForm.reset(); // پس از ارسال فرم، فرم را بازنشانی می‌کنیم.
-    });
-});
-
-    </script>
+  <div class="message-box">
+      <p>این یک پیغام وسط صفحه با انیمیشن است.</p>
+  </div>
 </body>
+
 </html>

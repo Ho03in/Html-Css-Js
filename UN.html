@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سایت آگهی و فروش nj</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/UN.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-header d-flex">
+            <div class="logo-image">
+                <img src="./img/TransitArts_Logo.png" />
+            </div>
+            <div class="logo-text">
+                <a>آگهی وفروش </a>
+            </div>
+        </div>
+        <div class="search-header">
+            <form id="search-form" action="search.php" method="GET">
+                <input type="text" name="query" id="search-input" placeholder="جستجو..." />
+                <button type="submit" id="search-button">جستجو</button>
+            </form>
+        </div>
+        <div class="nav-header">
+            <ul>
+                <!-- <li>
+                                    <a href="#">صفحه اصلی</a>
+                                </li> -->
+                <li>
+                    <a href="#"> ذخیره ها</a>
+                </li>
+                <li>
+                    <a href="#"> پیام ها</a>
+                </li>
+                <li>
+                    <a href="#"> حساب من</a>
+                </li>
+                <li>
+                    <button id="submit-ad-button">ثبت آگهی رایگان</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="background-image">
+        <img  class="image" src="./img/U-I2.jpeg" alt="عکس با انیمیشن" />
+        <div class="alert">
+            <img class="alert-img" src="./img/alert.jpg" alt="">
+            <p>با عرض پوزش در حال بروزرسانی...</p>
+            <a href="./header.html">
+            <button class="button" type="button"><span>بازگشت به صفحه اصلی</span></button>
+        </a>
+
+        </div>
+    </div>
+
+
+    
+
+    <script>
+        // متغیر دکمه "ثبت آگهی"
+        const submitAdButton = document.getElementById("submit-ad-button");
+
+        // تعیین آدرس صفحه آگهی
+        const adPageURL = "file:///G:/Html-Css-JS/newad.html"; // جایگزین آدرس واقعی صفحه آگهی خود
+
+        // اضافه کردن رویداد کلیک به دکمه "ثبت آگهی"
+        submitAdButton.addEventListener("click", function () {
+            // انتقال به صفحه آگهی
+            window.location.href = adPageURL;
+        });
+        
+    </script>
+</body>
+
+</html>
