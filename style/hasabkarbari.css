@@ -17,6 +17,10 @@
     justify-content: space-around;
     margin-right: 1.5rem;
 }
+.info-side p{
+    font-size: 20px;
+    font-weight: bold;    
+}
 .login-btn{
         padding: 0.5rem;
         border-radius: 13px;
@@ -29,15 +33,19 @@
 
 .lists{
     padding: 1.5rem 4rem;
-    margin: 0 7rem;
+    margin: 1rem 7rem 7rem 3rem;
 }
 ul{
     line-height: 50px;
 }
-a{
+.lists li a{
     display: block;
-    color: rgb(75, 75, 75);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
      margin-right: 10px;
+
+
 }
 a:hover{
     color: orangered;

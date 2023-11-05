@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سایت آگهی و فروش nj</title>
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/hasabkarbari.css">
 
 </head>
 
@@ -22,77 +22,72 @@
                 </div>
             </div>
             <div class="search-header">
-                <form id="search-form" action="search.php" method="GET">
-                    <input type="text" name="query" id="search-input" placeholder="جستجو...">
-                    <button type="submit" id="search-button">جستجو</button>
+                <form action="#">
+                    <input type="text" placeholder="جستجوی کالای مورد نظر" class="abasan">
+                    <button class="abasan">جستجو</button>
                 </form>
             </div>
             <div class="nav-header">
                 <ul>
-
+                    <!-- <li>
+                            <a href="#">صفحه اصلی</a>
+                        </li> -->
                     <li>
-                        <a href="./UN.html"> ذخیره ها</a>
-                        
-                        
-                        
+                        <a href="#"> ذخیره ها</a>
                     </li>
                     <li>
-                        <a href="./UN.html""> پیام ها</a>
-                        </li>
-                        <li>
-                            
-                            <button id="showButton" ><span class="material-symbols-outlined">
-                                account_circle
-                                </span></button>
-                            <div id="overlay" class="overlay">
-                              <div class="box">
-                                        <div class="top-box">
-                                            <div>
-                                                    <a href="./UN.html"><img src="./img/profile-image.jfif" alt=""></a>
-                                            </div>
-                                            <div>
-                                                    <p>ho03in</p>
-                                                    <p>موجودی: 0 تومان</p>
-                                            </div>
-                                        </div>
-                                        <hr>                                        
-                                            <div class="other-box">
-                                                <a href="./hesabkarbari.html">پیشخوان من</a>
-                                                <a href="./UN.html"> مالی و اشتراک</a>
-                                                <a href="./UN.html">تماس با پشتیبانی</a>
-                                                <hr>
-                                                <a href="./UN.html" class="quit">خروج از حساب کاربری</a>
-                                                <button id="closeButton" hidden>Close</button> <!-- Close button added -->
-                                            </div>                                                                     
-                              </div>
-                            </div>                        
-                    </li>            
+                        <a href="#"> پیام ها</a>
+                    </li>
+                    <li>
+                        <a href="#"> حساب من</a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: white;"> + ثبت آگهی</a>
+                    </li>
                 </ul>
-                <button id="submit-ad-button">ثبت آگهی رایگان</button>
             </div>
         </header>
-        <div class="main-container Shabnam">
-            <div class="login-form">
-                    <div class="form-describtion">
-                        <ul>
-                            <li ><a href="#">ورود</a></li><span class="span">/</span>
-                            <li ><a href="#">ثبت نام</a></li>
-                        </ul>
-                        <p class="title-2">لطفا برای ورود نام کاربری و کلمه عبور خود را وارد کنید.</p>
+        <hr>
+
+        <div class="main-container-hasabkarbari Shabnam">
+            <div class="profile-top">
+                <div class="right-profile">
+                    <div class="profile-side">
+                        <img src="./img/icons8-male-user-64.png">
                     </div>
-                    <div class="form">
-                        <form action="/action_page.php">
-                            <label for="username" class="lable"> نام کاربری:</label><br>
-                            <input type="text" id="input" name="username" value=""><br>
-                            <label for="password" class="lable">کلمه عبور:</label><br>
-                            <input type="password" id="input" name="password" value=""><br>
-                            <input type="submit" value="ورود" style="margin-top: 2.5rem" class="blue-btn Shabnam">
+                    <div class="info-side">
+                        <p>کاربر سایت</p>
+                        <form action="#">
+                            <button class="login-btn Shabnam"><a href="./login.html">ورود / ثبت نام</a></button>
                         </form>
                     </div>
+                </div>
+                <div class="left-icon">
+                    <img src="./img/icons8-previous-64 (1).png">
+                </div>
+            </div>
+            <hr>
+            <div class="lists">
+                <ul>
+                    <li>
+                        <img src="./img/icons8-pass-fail-64.png">
+                        <a href="#">آگهی های من</a>
+                    </li>
+                    <li>
+                        <img src="./img/icons8-shopping-cart-64.png">
+                        <a href="#">خرید های من</a>
+                    </li>
+                    <li><img src="./img/icons8-transaction-list-64.png"><a href="#">مدیریت سفارش ها</a></li>
+                    <li><img src="./img/icons8-money-circulation-64.png"><a href="#">پرداخت های من</a></li>
+                    <li><img src="./img/icons8-search-64.png"><a href="#">جستجو های ذخیره شده</a></li>
+                    <li><img src="./img/icons8-shopping-cart-64.png"><a href="#">فروشگاه من</a></li>
+                    <hr>
+                    <li><img src="./img/icons8-online-support-64.png"><a href="#">تماس با پشتیبانی</a></li>
+                </ul>
             </div>
         </div>
-       
     </div>
+    <br>
     <footer class="footer">
         <div class="top-footer">
             <div class="right-top-footer Shabnam">
@@ -159,6 +154,8 @@
             </div>
         </div>
     </footer>
+    </div>
+
     <script>
         var amountElement = document.getElementById("amount");
         var amountValue = parseInt(amountElement.textContent);

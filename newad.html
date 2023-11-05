@@ -5,130 +5,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سایت آگهی و فروش nj</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/hasabkarbari.css">
     <link rel="stylesheet" href="./style/ad register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <div class="container-main">
-        <div class="container">
-            <header class="header d-flex">
-                <div class="logo-header d-flex">
-                    <div class="logo-image">
-                        <img src="./img/TransitArts_Logo.png">
-                    </div>
-                    <div class="logo-text">
-                        <a>آگهی وفروش </a>
-                    </div>
-                </div>
-                <div class="search-header d-none">
-                    <form action="#">
-                        <input type="text" placeholder="جستجوی کالای مورد نظر" class="abasan">
-                        <button class="abasan">جستجو</button>
-                    </form>
-                </div>
-                <div class="nav-header">
-                    <ul>
-                        <!-- <li>
-                                <a href="#">صفحه اصلی</a>
-                            </li> -->
-                        <li>
-                            <a href="#"> ذخیره ها</a>
-                        </li>
-                        <li>
-                            <a href="#"> پیام ها</a>
-                        </li>
-                        <li>
-                            <a href="#"> حساب من</a>
-                        </li>
-                        <li class=" d-none">
-                            <a href="#" style="color: white;"> + ثبت آگهی</a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
-            </div>
-        <section class="content d-flex">                
-                <div class="top-content d-flex">
-                    <h4>ثبت آگهی</h4>
-                    <button type="button" class="button" id="clearFormButton">پاک کردن فرم</button>
-                </div>        
-                       
-                <form action="#" class="main-content d-grid" id="myForm">
-                    <div class="right-content d-grid" >                                        
-                                <div class="selector">
-                                    <label for="category" class=""><strong class="">دسته بندی</strong></label>
-                                    <select class="select" id="category" name="category">
-                                        <option class="d-none" value="" selected></option>
-                                        <option value="vehicles">وسایل نقلیه</option>
-                                        <option value="Properties">املاک</option>
-                                        <option value="employment">استخدام</option>
-                                        <option value="Business-services">خدمات کسب وکار</option>
-                                        <option value="furniture">لوازم خانگی</option>
-                                        <option value="sport">ورزش فرهنگ فراغت</option>
-                                        <option value="Electronic-appliances">لوازم الکترونیکی</option>
-                                        <option value="industrial">صنعتی اداری تجاری</option>
-                                        <option value="mobile">موبایل تبلت لوازم</option>
-                                        <option value="personal-stuff">لوازم شخصی</option>
-                                      </select>
-                                </div>
 
-                                
-                                <div class="selector">
-                                    <label for="ad-title"><strong class="">عنوان آگهی</strong></label>
-                                    <input type="text" id="ad-title" name="ad-title" required><br>
-                                    <span>عنوان مناسبی برای آگهی تان وارد کنید.</span>
-                                </div>
-        
-                                <div class="selector">
-                                    <label for="description"><strong class="">توضیحات</strong></label>
-                                    <input type="text" id="description" name="description"><br>
-                                    <span>توضیحات مناسبی برای آگهی تان وارد کنید</span>
-                                </div>
-        
-                                <div class="selector">
-                                    <label for="location"><strong class="">موقعیت مکانی</strong></label>
-                                    <select class="select" id="location" name="location">
-                                        <option class="d-none" value="" selected></option>
-                                        <option value="Tehran">تهران</option>
-                                        <option value="Azr-Gharbi">آذربایجان غربی</option>
-                                        <option value="Azr-sharghi">آذربایجان شرقی</option>
-                                        <option value="Esfahan">اصفهان</option>
-                                        <option value="Razavi">خراسان رضوی</option>
-                                        <option value="Zanjan">زنجان</option>
-                                        <option value="Mazandaran">مازندران</option>
-                                        <option value="Hamedan">همدان</option>
-                                        <option value="Kermanshah">کرمانشاه</option>
-                                        <option value="Lorestan">لرستان</option>
-                                        <option value="Khozestan">خوزستان</option>
-                                        <option value="Ghazvin">قزوین</option>
-                                        <option value="Gilan">گیلان</option>
-                                        <option value="Golestan">گلستان</option>
-                                        <option value="Ardebil">اردبیل</option>
-                                        <option value="Markazi">مرکزی</option>
-                                        <option value="Ilam">ایلام</option>
-                                      </select><br>
-                                    <span>موقعیت مکانی خود را انتخاب کنید</span>
-                                </div>
-        
-                                <div class="user-select">
-                                <h4>نوع کاربر</h4>
-                                <input type="radio" id="person" name="user-type" value="person" hidden>
-                                <label for="person"><strong class="">فرد</strong></label>
-                                <input type="radio" id="company" name="user-type" value="company" hidden>
-                                <label for="company"><strong class="">شرکت/فروشگاه</strong></label>
-                                 </div>                        
+
+    <div class="container" id>
+        <header class="header">
+            <div class="logo-header d-flex">
+                <div class="logo-image">
+                    <img src="./img/TransitArts_Logo.png">
+                </div>
+                <div class="logo-text">
+                    <a>آگهی وفروش </a>
+                </div>
+            </div>
+            <div class="search-header">
+                <form id="search-form" action="search.php" method="GET">
+                    <input type="text" name="query" id="search-input" placeholder="جستجو...">
+                    <button type="submit" id="search-button">جستجو</button>
+                </form>
+            </div>
+            <div class="nav-header">
+                <ul>
+
+                    <li>
+                        <a href="./UN.html"> ذخیره ها</a>
+                        
+                        
+                        
+                    </li>
+                    <li>
+                        <a href="./UN.html""> پیام ها</a>
+                        </li>
+                        <li>
+                            
+                            <button id="showButton" ><span class="material-symbols-outlined">
+                                account_circle
+                                </span></button>
+                            <div id="overlay" class="overlay">
+                              <div class="box">
+                                        <div class="top-box">
+                                            <div>
+                                                    <a href="./UN.html"><img src="./img/profile-image.jfif" alt=""></a>
+                                            </div>
+                                            <div>
+                                                    <p>ho03in</p>
+                                                    <p>موجودی: 0 تومان</p>
+                                            </div>
+                                        </div>
+                                        <hr>                                        
+                                            <div class="other-box">
+                                                <a href="./hesabkarbari.html">پیشخوان من</a>
+                                                <a href="./UN.html"> مالی و اشتراک</a>
+                                                <a href="./UN.html">تماس با پشتیبانی</a>
+                                                <hr>
+                                                <a href="./UN.html" class="quit">خروج از حساب کاربری</a>
+                                                <button id="closeButton" hidden>Close</button> <!-- Close button added -->
+                                            </div>                                                                     
+                              </div>
+                            </div>                        
+                    </li>
+                </ul>
+                    <button id="submit-ad-button">ثبت آگهی رایگان</button>
+            </div>
+        </header>
+        <section class="content d-flex">
+            <div class="top-content d-flex">
+                <h4>ثبت آگهی</h4>
+                <button type="button" class="button" id="clearFormButton">پاک کردن فرم</button>
+            </div>
+    
+            <form action="#" class="main-content d-grid" id="myForm">
+                <div class="right-content d-grid">
+                    <div class="selector">
+                        <label for="category" class=""><strong class="">دسته بندی</strong></label>
+                        <select class="select" id="category" name="category">
+                            <option class="d-none" value="" selected></option>
+                            <option value="vehicles">وسایل نقلیه</option>
+                            <option value="Properties">املاک</option>
+                            <option value="employment">استخدام</option>
+                            <option value="Business-services">خدمات کسب وکار</option>
+                            <option value="furniture">لوازم خانگی</option>
+                            <option value="sport">ورزش فرهنگ فراغت</option>
+                            <option value="Electronic-appliances">لوازم الکترونیکی</option>
+                            <option value="industrial">صنعتی اداری تجاری</option>
+                            <option value="mobile">موبایل تبلت لوازم</option>
+                            <option value="personal-stuff">لوازم شخصی</option>
+                        </select>
                     </div>
-                    <div class="left-content d-grid">
-                        <div d-flex>
+    
+    
+                    <div class="selector">
+                        <label for="ad-title"><strong class="">عنوان آگهی</strong></label>
+                        <input type="text" id="ad-title" name="ad-title" required><br>
+                        <span>عنوان مناسبی برای آگهی تان وارد کنید.</span>
+                    </div>
+    
+                    <div class="selector">
+                        <label for="description"><strong class="">توضیحات</strong></label>
+                        <input type="text" id="description" name="description"><br>
+                        <span>توضیحات مناسبی برای آگهی تان وارد کنید</span>
+                    </div>
+    
+                    <div class="selector">
+                        <label for="location"><strong class="">موقعیت مکانی</strong></label>
+                        <select class="select" id="location" name="location">
+                            <option class="d-none" value="" selected></option>
+                            <option value="Tehran">تهران</option>
+                            <option value="Azr-Gharbi">آذربایجان غربی</option>
+                            <option value="Azr-sharghi">آذربایجان شرقی</option>
+                            <option value="Esfahan">اصفهان</option>
+                            <option value="Razavi">خراسان رضوی</option>
+                            <option value="Zanjan">زنجان</option>
+                            <option value="Mazandaran">مازندران</option>
+                            <option value="Hamedan">همدان</option>
+                            <option value="Kermanshah">کرمانشاه</option>
+                            <option value="Lorestan">لرستان</option>
+                            <option value="Khozestan">خوزستان</option>
+                            <option value="Ghazvin">قزوین</option>
+                            <option value="Gilan">گیلان</option>
+                            <option value="Golestan">گلستان</option>
+                            <option value="Ardebil">اردبیل</option>
+                            <option value="Markazi">مرکزی</option>
+                            <option value="Ilam">ایلام</option>
+                        </select><br>
+                        <span>موقعیت مکانی خود را انتخاب کنید</span>
+                    </div>
+    
+                    <div class="user-select">
+                        <h4>نوع کاربر</h4>
+                        <input type="radio" id="person" name="user-type" value="person" hidden>
+                        <label for="person"><strong class="">فرد</strong></label>
+                        <input type="radio" id="company" name="user-type" value="company" hidden>
+                        <label for="company"><strong class="">شرکت/فروشگاه</strong></label>
+                    </div>
+                </div>
+                <div class="left-content d-grid">
+                    <div d-flex>
                         <div class="text">
                             <h4>انتخاب عکس</h4>
                             <p>یک تصویر بهتر از هزار کلمه, با قرار دادن عکس شانس دیده شدن آگهی‌تان را ۵ برابر کنید.</p>
                             <div class="wrapper">
-                                <div class="box">
+                                <div class="upload-box">
                                     <div class="input-bx">
                                         <h2 class="upload-area-title">آپلود فایل</h2>
                                         <div class="form">
@@ -146,20 +170,22 @@
                                                 <span>&#215;</span>
                                             </div>
                                             <div class="left">
-                                                <h3>ravi web.io</h3>                    
-                                                <span class="filetype">Pdf</span>                            
+                                                <h3>ravi web.io</h3>
+                                                <span class="filetype">Pdf</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+    
                         </div>
                         <div>
-                            <p class="rules">با ثبت آگهی در شیپور،شما<strong><a href="#"><b>شرایط و قوانین</b></a></strong>آن را پذیرفته‌اید  </p>        
+                            <p class="rules">با ثبت آگهی در شیپور،شما<strong><a href="#"><b>شرایط و
+                                            قوانین</b></a></strong>آن را پذیرفته‌اید </p>
                         </div>
                         <div class="submit">
-                            <button class="button" type="submit" value="ثبت آگهی" onclick="openPopup()">ثبت آگهی</button>
+                            <button class="button" type="submit" value="ثبت آگهی" onclick="openPopup()">ثبت
+                                آگهی</button>
                             <div class="popup" id="popup">
                                 <img src="./img/tick.png">
                                 <h3>متشکریم!</h3>
@@ -168,77 +194,86 @@
                             </div>
                         </div>
                     </div>
-                    </div>
-                </form>
-            </section>
                 </div>
-    <br>
-    <footer class="footer">
-        <div class="top-footer">
-            <div class="right-top-footer Shabnam">
-                <div class="right-rtf">
-                    <h3>آگهی و فروش nj</h3>
-                    <a href="#">درباره ما</a>
-                    <a href="#"> بلاگ</a>
-                    <a href="#"> راهنمای مشتریان</a>
-                    <a href="#"> نقشه سایت</a>
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="top-footer">
+                <div class="right-top-footer Shabnam">
+                    <div class="right-rtf">
+                        <h3>آگهی و فروش nj</h3>
+                        <a href="./UN.html">درباره ما</a>
+                        <a href="./UN.html"> بلاگ</a>
+                        <a href="./UN.html"> راهنمای مشتریان</a>
+                        <a href="./UN.html"> نقشه سایت</a>
+                    </div>
+                    <div class="middle-rtf">
+                        <h3> راهنمای مشتریان </h3>
+                        <a href="./UN.html"> سوالات متداول</a>
+                        <a href="./UN.html">تماس با پشتیبانی </a>
+                        <a href="./UN.html"> راهنما و پشتیبانی</a>
+                        <a href="./UN.html"> قوانین و مقررات </a>
+                    </div>
+                    <div class="left-rtf">
+                        <h3> خدمات </h3>
+                        <a href="./UN.html"> همه فروشگاه‌ها</a>
+                        <a href="./UN.html"> همه مشاوران </a>
+                        <a href="./UN.html"> دانلود اپلیکیشن </a>
+                    </div>
                 </div>
-                <div class="middle-rtf">
-                    <h3> راهنمای مشتریان </h3>
-                    <a href="#"> سوالات متداول</a>
-                    <a href="#">تماس با پشتیبانی </a>
-                    <a href="#"> راهنما و پشتیبانی</a>
-                    <a href="#"> قوانین و مقررات </a>
-                </div>
-                <div class="left-rtf">
-                    <h3> خدمات </h3>
-                    <a href="#"> همه فروشگاه‌ها</a>
-                    <a href="#"> همه مشاوران </a>
-                    <a href="#"> دانلود اپلیکیشن </a>
-                </div>
-            </div>
-            <div class="left-top-footer">
-                <a href="">
-                    <div class="p">
-                        <p class="Shabnam">اپلیکیشن اندروید</p>
-                        <p class="Shabnam-Bold"> دانلود مستقیم</p>
-                    </div>
-                    <div class="icon">
-                        <img src="./icon/icons8-download-48.png">
-                    </div>
-                </a>
-                <a href="">
-                    <div class="p">
-                        <p class="Shabnam"> اپلیکیشن ios</p>
-                        <p class="Shabnam-Bold"> سیب اپ</p>
-                    </div>
-                    <div class="icon">
-                        <img src="./icon/icons8-ios-48.png">
-                    </div>
-                </a>
-                <a href="">
-                    <div class="p">
-                        <p class="Shabnam-Bold"> همه مارکت ها</p>
-                    </div>
-                    <div class="icon">
-                        <img src="./icon/icons8-previous-64.png">
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="down-footer">
-            <div class="right-down">
-                <p class="Shabnam">کلیه حقوق این سایت متعلق به شرکت nj است.</p>
-            </div>
-            <div class="left-down">
-                <div class="footer-icon">
-                    <img src="./icon/icons8-linkedin-48.png">
-                    <img src="./icon/icons8-instagram-48.png">
-                    <img src="./icon/icons8-telegram-48.png">
+                <div class="left-top-footer">
+                    <a href="./UN.html">
+                        <div class="apps-android">
+                            <div class="p">
+                                <p class="Shabnam">اپلیکیشن اندروید</p>
+                                <p class="Shabnam-Bold"> دانلود مستقیم</p>
+                            </div>
+                            <div class="icon-none">
+                                <img src="./icon/icons8-download-48.png">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./UN.html">
+                        <div class="apps-ios">
+                            <div class="p">
+                                <p class="Shabnam"> اپلیکیشن ios</p>
+                                <p class="Shabnam-Bold"> سیب اپ</p>
+                            </div>
+                            <div class="icon-none">
+                                <img src="./icon/icons8-ios-48.png">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./UN.html">
+                        <div class="apps-all">
+                            <div class="p-all">
+                                <p class="Shabnam-Bold"> همه مارکت ها</p>
+                            </div>
+                            <div class="icon">
+                                <img src="./icon/icons8-previous-64.png">
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="down-footer">
+                <div class="right-down">
+                    <p class="Shabnam">کلیه حقوق این سایت متعلق به <b>شرکت Nj</b> است.</p>
+                </div>
+                <div class="left-down">
+                    <a href="./UN.html">
+                        <div class="footer-icon">
+                            <img src="./icon/icons8-linkedin-48.png">
+                            <img src="./icon/icons8-instagram-48.png">
+                            <img src="./icon/icons8-telegram-48.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
     <script>
         var amountElement = document.getElementById("amount");
         var amountValue = parseInt(amountElement.textContent);
@@ -264,43 +299,43 @@
 
     </script>
     <script>
-             let popup =document.getElementById("popup");
+        let popup = document.getElementById("popup");
 
-function openpopup(){
-    popup.classlist.add("open-Popup");
-}
-function closepopup(){
-    popup.classlist.remove("open-Popup");
-}
-var selectField = document.getElementById("selectField");
+        function openpopup() {
+            popup.classlist.add("open-Popup");
+        }
+        function closepopup() {
+            popup.classlist.remove("open-Popup");
+        }
+        var selectField = document.getElementById("selectField");
         var selectText = document.getElementById("selectText");
         var option = document.getElementsByClassName("option");
         var list = document.getElementById("list");
         var arrowIcon = document.getElementById("arrowIcon");
 
 
-        selectField.onclick = function(){
+        selectField.onclick = function () {
             list.classList.toggle("hide");
             arrowIcon.classList.toggle("rotate");
         }
 
-        for(option of option){
-            option.onclick = function(){
+        for (option of option) {
+            option.onclick = function () {
                 selectText.innerHTML = this.textContent;
                 list.classList.toggle("hide");
                 arrowIcon.classList.toggle("rotate");
 
             }
         }
-// یافتن دکمه ریست خارجی و المان‌های مربوط به فرم
-const resetFormButton = document.getElementById('resetFormButton');
-const myForm = document.getElementById('myForm');
+        // یافتن دکمه ریست خارجی و المان‌های مربوط به فرم
+        const resetFormButton = document.getElementById('resetFormButton');
+        const myForm = document.getElementById('myForm');
 
-// اضافه کردن گوشه‌گیری به دکمه ریست خارجی
-resetFormButton.addEventListener('click', function() {
-  // پاک کردن مقادیر ورودی‌ها
-  myForm.reset();
-});
+        // اضافه کردن گوشه‌گیری به دکمه ریست خارجی
+        resetFormButton.addEventListener('click', function () {
+            // پاک کردن مقادیر ورودی‌ها
+            myForm.reset();
+        });
 
 
     </script>

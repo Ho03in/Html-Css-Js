@@ -74,9 +74,9 @@ header
 content
 ===============
 */
-.container {
-  max-width: none;
+/* .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -88,8 +88,8 @@ content
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* سایه container */
   border-radius: 5px; /* گوشه‌گیری container */
   margin: 12px 30px;
-}
-.container-main {
+} */
+.container-main  {
   background: linear-gradient(210deg, #5a189a 40%, #2f56ff 60%);
 }
 
@@ -185,7 +185,7 @@ content
   width: 100%;
   min-height: 42vh;
 }
-.box {
+.upload-box {
   max-width: 500px;
   padding: 30px;
   width: 100%;
@@ -315,6 +315,10 @@ content
   background-color: var(--clr-primary-2);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  -moz-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  -o-transform: translateY(4px);
 }
 input[type="text"] {
   font-family: "vazir";
