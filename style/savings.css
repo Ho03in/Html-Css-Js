@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "vazir";
+    src: url(../fonts/vazir/Vazir-Medium-FD-WOL.woff2) format("woff2"),
+      url(../fonts/vazir/Vazir-Medium-FD-WOL.woff) format("woff"),
+      url(../fonts/vazir/Vazir-Medium-FD-WOL.ttf) format("true tape");
+  }
+  
+  :Root {
+    --ff-primary: "vazir", sans-serif;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:60vh;
+    width: 100%;  
+}
+.main-container :nth-child(2){
+    font-weight: bold;
+}
+.main-container p{
+    font-size: 20px;
+    margin-top: 20px;
+}

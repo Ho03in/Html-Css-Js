@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
             <title>سایت آگهی و فروش nj</title>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/hasabkarbari.css">
+    <link rel="stylesheet" href="./style/confirm.css">
 </head>
 
 <body>
@@ -30,18 +29,13 @@
             </div>
             <div class="nav-header">
                 <ul>
-
                     <li>
-                        <a href="./savings.html"> ذخیره ها</a>
-                        
-                        
-                        
+                        <a href="./savings.html"> ذخیره ها</a>                                                            
                     </li>
                     <li>
-                        <a href="./messages.html""> پیام ها</a>
-                        </li>
-                        <li>
-                            
+                        <a href="./messages.html"> پیام ها</a>
+                    </li>
+                    <li>                            
                             <button id="showButton" ><span class="material-symbols-outlined">
                                 account_circle
                                 </span></button>
@@ -59,55 +53,67 @@
                                         <hr>                                        
                                             <div class="other-box">
                                                 <a href="./hesabkarbari.html">پیشخوان من</a>
-                                                <a href="./UN.html"> مالی و اشتراک</a>
-                                                <a href="./UN.html">تماس با پشتیبانی</a>
+                                                <a href="./financial.html"> مالی و اشتراک</a>
+                                                <a href="#"  id="openPopup">تماس با پشتیبانی</a>
+                                                <div class="popup" id="contactPopup">
+                                                    <div class="popup-content">
+                                                        <span class="close" id="closePopup" style="font-size: 20px; cursor: pointer;">&times;</span>
+                                                        <h2>تماس با پشتیبانی</h2>
+                                                        <p>سوالات و نظرات خود را با پشتیبانی ما در میان بگذارید.
+                                                        </p>
+                                                        <form action="#" method="post">
+                                                            <label for="subject">موضوع:</label>
+                                                            <input type="text" id="subject" name="subject" required>
+                                            
+                                                            <label for="message">پیام:</label>
+                                                            <textarea id="message" name="message" rows="4" required></textarea>
+                                            
+                                                            <button type="submit">ارسال</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
                                                 <hr>
                                                 <a href="./UN.html" class="quit">خروج از حساب کاربری</a>
                                                 <button id="closeButton" hidden>Close</button> <!-- Close button added -->
                                             </div>                                                                     
                               </div>
                             </div>                        
-                    </li>            
+                    </li>
                 </ul>
                 <a href="newad.html"><button id="submit-ad-button">ثبت آگهی رایگان</button></a>    
             </div>
         </header>
-        <div class="main-container-hasabkarbari Shabnam">
-            <div class="profile-top">
-                <div class="right-profile">
-                    <div class="profile-side">
-                        <img src="./img/icons8-male-user-64.png">
-                    </div>
-                    <div class="info-side">
-                        <p>کاربر سایت</p>
-                        <form action="#">
-                            <button class="login-btn Shabnam"><a href="./login.html">ورود / ثبت نام</a></button>
-                        </form>
-                    </div>
+        <div class="main-container Shabnam">
+            <p>آگهی شما با موفقیت ثبت شد و درحال بررسی است.شناسه آگهی : 423665779</p>
+            <form action="#">
+            <h3>افزایش بازدید</h3>
+            <p>با امکانات زیر بازدید آگهی خود را افزایش دهید.</p>
+            <div class="visit">
+                <div class="right-v">
+                    <h4>بروزرسانی</h4>
+                    <p>آگهی شما با هر بار بروزرسانی به بالای لیست آگهی‌ها برمی‌گردد.</p>
+                    <p>17,500</p>
                 </div>
-                <div class="left-icon">
-                    <img src="./img/icons8-previous-64 (1).png">
+                <div class="left-v">
+                    <a href="">جزئیات</a>
+                    <button >1 بار بروزرسانی</button>
                 </div>
             </div>
-            <hr>
-            <div class="lists">
-                <ul>
-                    <li>
-                        <img src="./img/icons8-pass-fail-64.png">
-                        <a href="#">آگهی های من</a>
-                    </li>
-                    <li>
-                        <img src="./img/icons8-shopping-cart-64.png">
-                        <a href="#">خرید های من</a>
-                    </li>
-                    <li><img src="./img/icons8-transaction-list-64.png"><a href="#">مدیریت سفارش ها</a></li>
-                    <li><img src="./img/icons8-money-circulation-64.png"><a href="#">پرداخت های من</a></li>
-                    <li><img src="./img/icons8-search-64.png"><a href="#">جستجو های ذخیره شده</a></li>
-                    <li><img src="./img/icons8-shopping-cart-64.png"><a href="#">فروشگاه من</a></li>
-                    <hr>
-                    <li><img src="./img/icons8-online-support-64.png"><a href="#">تماس با پشتیبانی</a></li>
-                </ul>
+            <h3>پیشنهاد ویژه </h3>
+            <div class="visit">
+                <div class="right-v">
+                    <h4>نشان تخفیفی</h4>
+                    <p>متمایز کردن آگهی تخفیف دار شما</p>
+                    <p>11,000</p>
+                </div>
+                <div class="left-v">
+                    <a href="">جزئیات</a>
+                </div>
             </div>
+            <div></div>
+            <p>شما با زدن روی دکمه پرداخت، موافقت خود را با قوانین و مقررات شیپور اعلام می کنید.</p>
+            <div></div>
+        </form>
         </div>
         <footer class="footer">
             <div class="top-footer">
@@ -237,35 +243,18 @@
             }
         });
 
-        // متغیر دکمه "ثبت آگهی"
-        const submitAdButton = document.getElementById('submit-ad-button');
+        // // متغیر دکمه "ثبت آگهی"
+        // const submitAdButton = document.getElementById('submit-ad-button');
 
-        // تعیین آدرس صفحه آگهی
-        const adPageURL = 'file:///G:/Html-Css-JS/newad.html'; // جایگزین آدرس واقعی صفحه آگهی خود
+        // // تعیین آدرس صفحه آگهی
+        // const adPageURL = 'file:///G:/Html-Css-JS/newad.html'; // جایگزین آدرس واقعی صفحه آگهی خود
 
-        // اضافه کردن رویداد کلیک به دکمه "ثبت آگهی"
-        submitAdButton.addEventListener('click', function () {
-            // انتقال به صفحه آگهی
-            window.location.href = adPageURL;
-        });
-
-        // const showButton = document.getElementById('showButton');
-        // const closeButton = document.getElementById('closeButton');
-        // const overlay = document.getElementById('overlay');
-
-        // showButton.addEventListener('click', function () {
-        //   overlay.style.display = 'flex';
+        // // اضافه کردن رویداد کلیک به دکمه "ثبت آگهی"
+        // submitAdButton.addEventListener('click', function () {
+        //     // انتقال به صفحه آگهی
+        //     window.location.href = adPageURL;
         // });
 
-        // overlay.addEventListener('click', function (event) {
-        //   if (event.target === overlay) {
-        //     overlay.style.display = 'none';
-        //   }
-        // });
-
-        // closeButton.addEventListener('click', function () {
-        //   overlay.style.display = 'none';
-        // });
 
 const showButton = document.getElementById('showButton');
 const overlay = document.getElementById('overlay');
@@ -287,6 +276,33 @@ overlay.addEventListener('click', function (event) {
     }
 });
 
+function toggleFavorite(icon) {
+    icon.classList.toggle("selected");
+}
+const openPopupButton = document.getElementById("openPopup");
+        const closePopupButton = document.getElementById("closePopup");
+        const contactPopup = document.getElementById("contactPopup");
+
+        openPopupButton.addEventListener("click", function() {
+            contactPopup.style.display = "block";
+        });
+
+        closePopupButton.addEventListener("click", function() {
+            contactPopup.style.display = "none";
+        });
+
+        let isContactPopupOpen = false;
+
+contactPopup.addEventListener("mousedown", function() {
+    isContactPopupOpen = true;
+});
+
+window.addEventListener("mousedown", function(event) {
+    if (!isContactPopupOpen && !event.target.matches('.contact-popup, .contact-popup *')) {
+        contactPopup.style.display = "none";
+    }
+    isContactPopupOpen = false;
+});
 
 
     </script>

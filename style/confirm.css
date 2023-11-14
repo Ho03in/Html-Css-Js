@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "vazir";
+    src: url(../fonts/vazir/Vazir-Medium-FD-WOL.woff2) format("woff2"),
+      url(../fonts/vazir/Vazir-Medium-FD-WOL.woff) format("woff"),
+      url(../fonts/vazir/Vazir-Medium-FD-WOL.ttf) format("true tape");
+  }
+  
+  :Root {
+    --ff-primary: "vazir", sans-serif;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container>p{
+    width: 1100px;
+    height: 80px;
+    background-color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 40px;
+    padding: 20px 20px;
+    text-align: center;
+    box-shadow: 3px 2px 6px 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.main-container form{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-primary);
+  }
+  .main-container form h3{
+    background-color: gray;
+    margin: 10px 50px;
+  }
+  .main-container form>p{
+    background-color: rgb(62, 71, 151);
+    margin: 10px 50px;
+  }
+
+  .visit{
+    width: 1100px;
+    height:150px;
+    background-color: red;
+    box-shadow: 3px 2px 6px 0 rgba(0, 0, 0, .2);
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.right-v{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.left-v{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+

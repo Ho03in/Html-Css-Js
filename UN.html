@@ -5,83 +5,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>سایت آگهی و فروش nj</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/UN.css" />
 </head>
 
 <body>
     <div class="container" id>
-    <header class="header">
-        <div class="logo-header d-flex">
-            <div class="logo-image">
-                <img src="./img/TransitArts_Logo.png">
+        <header class="header">
+            <div class="logo-header d-flex">
+                <div class="logo-image">
+                    <img src="./img/TransitArts_Logo.png">
+                </div>
+                <div class="logo-text">
+                    <a>آگهی وفروش </a>
+                </div>
             </div>
-            <div class="logo-text">
-                <a>آگهی وفروش </a>
+            <div class="search-header">
+                <form id="search-form" action="search.php" method="GET">
+                    <input type="text" name="query" id="search-input" placeholder="جستجو...">
+                    <button type="submit" id="search-button">جستجو</button>
+                </form>
             </div>
-        </div>
-        <div class="search-header">
-            <form id="search-form" action="search.php" method="GET">
-                <input type="text" name="query" id="search-input" placeholder="جستجو...">
-                <button type="submit" id="search-button">جستجو</button>
-            </form>
-        </div>
-        <div class="nav-header">
-            <ul>
+            <div class="nav-header">
+                <ul>
 
-                <li>
-                    <a href="./UN.html"> ذخیره ها</a>
-                    
-                    
-                    
-                </li>
-                <li>
-                    <a href="./UN.html""> پیام ها</a>
+                    <li>
+                        <a href="./UN.html"> ذخیره ها</a>
+
+
+
+                    </li>
+                    <li>
+                        <a href="./UN.html""> پیام ها</a>
                     </li>
                     <li>
                         
-                        <button id="showButton" ><span class="material-symbols-outlined">
-                            account_circle
+                        <button id=" showButton"><span class="material-symbols-outlined">
+                                account_circle
                             </span></button>
-                        <div id="overlay" class="overlay">
-                          <div class="box">
+                            <div id="overlay" class="overlay">
+                                <div class="box">
                                     <div class="top-box">
                                         <div>
-                                                <a href="./UN.html"><img src="./img/profile-image.jfif" alt=""></a>
+                                            <a href="./UN.html"><img src="./img/profile-image.jfif" alt=""></a>
                                         </div>
                                         <div>
-                                                <p>ho03in</p>
-                                                <p>موجودی: 0 تومان</p>
+                                            <p>ho03in</p>
+                                            <p>موجودی: 0 تومان</p>
                                         </div>
                                     </div>
-                                    <hr>                                        
-                                        <div class="other-box">
-                                            <a href="./hesabkarbari.html">پیشخوان من</a>
-                                            <a href="./UN.html"> مالی و اشتراک</a>
-                                            <a href="./UN.html">تماس با پشتیبانی</a>
-                                            <hr>
-                                            <a href="./UN.html" class="quit">خروج از حساب کاربری</a>
-                                            <button id="closeButton" hidden>Close</button> <!-- Close button added -->
-                                        </div>                                                                     
-                          </div>
-                        </div>                        
-                </li>            
-            </ul>
-            <button id="submit-ad-button">ثبت آگهی رایگان</button>
-        </div>
-    </header>
-    <div class="background-image">
-        <img  class="image" src="./img/U-I2.jpeg" alt="عکس با انیمیشن" />
-        <div class="alert">
-            <img class="alert-img" src="./img/alert.jpg" alt="">
-            <p>با عرض پوزش در حال بروزرسانی...</p>
-            <a href="./header.html">
-            <button class="button" type="button"><span>بازگشت به صفحه اصلی</span></button>
-        </a>
+                                    <hr>
+                                    <div class="other-box">
+                                        <a href="./hesabkarbari.html">پیشخوان من</a>
+                                        <a href="./UN.html"> مالی و اشتراک</a>
+                                        <a href="./UN.html">تماس با پشتیبانی</a>
+                                        <hr>
+                                        <a href="./UN.html" class="quit">خروج از حساب کاربری</a>
+                                        <button id="closeButton" hidden>Close</button> <!-- Close button added -->
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+                <button id="submit-ad-button">ثبت آگهی رایگان</button>
+            </div>
+        </header>
+        <div class="background-image">
+            <img class="image" src="./img/U-I2.jpeg" alt="عکس با انیمیشن" />
+            <div class="alert">
+                <img class="alert-img" src="./img/alert.jpg" alt="">
+                <p>با عرض پوزش در حال بروزرسانی...</p>
+                <a href="./header.html">
+                    <button class="button" type="button"><span>بازگشت به صفحه اصلی</span></button>
+                </a>
 
+            </div>
         </div>
-    </div>
     </div>
     <script>
         // متغیر دکمه "ثبت آگهی"
@@ -95,7 +96,7 @@
             // انتقال به صفحه آگهی
             window.location.href = adPageURL;
         });
-        
+
     </script>
 </body>
 

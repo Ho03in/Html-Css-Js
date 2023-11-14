@@ -320,7 +320,7 @@ content
   -ms-transform: translateY(4px);
   -o-transform: translateY(4px);
 }
-input[type="text"] {
+.selector input {
   font-family: "vazir";
   color: white;
   width: 100%;
@@ -336,9 +336,16 @@ input[type="text"] {
   transition: 0.5s;
   outline: none;
   font-size: 17px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
-input[type="text"]:focus {
+.selector input:focus {
   border: none;
   border-bottom: 1px solid var(--clr-primary-3);
   background: white;
@@ -371,7 +378,7 @@ select:focus {
   background-color: #007bff;
   color: #fff;
 }
-span {
+.selector span {
   font-size: 14px;
   margin-right: 7px;
   color: white;

@@ -28,18 +28,13 @@
             </div>
             <div class="nav-header">
                 <ul>
-
                     <li>
-                        <a href="./UN.html"> ذخیره ها</a>
-                        
-                        
-                        
+                        <a href="./savings.html"> ذخیره ها</a>                                                            
                     </li>
                     <li>
-                        <a href="./UN.html""> پیام ها</a>
-                        </li>
-                        <li>
-                            
+                        <a href="./messages.html"> پیام ها</a>
+                    </li>
+                    <li>                            
                             <button id="showButton" ><span class="material-symbols-outlined">
                                 account_circle
                                 </span></button>
@@ -57,8 +52,25 @@
                                         <hr>                                        
                                             <div class="other-box">
                                                 <a href="./hesabkarbari.html">پیشخوان من</a>
-                                                <a href="./UN.html"> مالی و اشتراک</a>
-                                                <a href="./UN.html">تماس با پشتیبانی</a>
+                                                <a href="./financial.html"> مالی و اشتراک</a>
+                                                <a href="#"  id="openPopup">تماس با پشتیبانی</a>
+                                                <div class="popup" id="contactPopup">
+                                                    <div class="popup-content">
+                                                        <span class="close" id="closePopup" style="font-size: 20px; cursor: pointer;">&times;</span>
+                                                        <h2>تماس با پشتیبانی</h2>
+                                                        <p>سوالات و نظرات خود را با پشتیبانی ما در میان بگذارید.
+                                                        </p>
+                                                        <form action="#" method="post">
+                                                            <label for="subject">موضوع:</label>
+                                                            <input type="text" id="subject" name="subject" required>
+                                            
+                                                            <label for="message">پیام:</label>
+                                                            <textarea id="message" name="message" rows="4" required></textarea>
+                                            
+                                                            <button type="submit">ارسال</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
                                                 <hr>
                                                 <a href="./UN.html" class="quit">خروج از حساب کاربری</a>
                                                 <button id="closeButton" hidden>Close</button> <!-- Close button added -->
@@ -67,7 +79,7 @@
                             </div>                        
                     </li>
                 </ul>
-                    <button id="submit-ad-button">ثبت آگهی رایگان</button>
+                <a href="newad.html"><button id="submit-ad-button">ثبت آگهی رایگان</button></a>    
             </div>
         </header>
         <section class="category">
@@ -116,7 +128,6 @@
                 </div>
             </a>
         </section>
-
         <div class="main-container Shabnam">
             <div class="title">
                 <div class="title-icon">
@@ -130,6 +141,7 @@
 
                 <a href="#">
                     <div class="card">
+                        <i class="favorite-icon" onclick="toggleFavorite(this)">&#9825;</i>
                         <img src="./img/gtr.jpg" alt="Denim Jeans" style="width:100%">
                         <h3>لباسشویی</h3>
                         <p class="card-price" id="amount">16000000&nbsp;&nbsp; <span class="toman">تومان</span></p>
@@ -384,7 +396,7 @@
                             <img src="./icon/icons8-telegram-48.png">
                         </div>
                     </a>
-                    <p>Ver:1.2</p>
+                    <p>Ver:1.3</p>
                 </div>
             </div>
         </footer>
@@ -441,35 +453,18 @@
             }
         });
 
-        // متغیر دکمه "ثبت آگهی"
-        const submitAdButton = document.getElementById('submit-ad-button');
+        // // متغیر دکمه "ثبت آگهی"
+        // const submitAdButton = document.getElementById('submit-ad-button');
 
-        // تعیین آدرس صفحه آگهی
-        const adPageURL = 'file:///G:/Html-Css-JS/newad.html'; // جایگزین آدرس واقعی صفحه آگهی خود
+        // // تعیین آدرس صفحه آگهی
+        // const adPageURL = 'file:///G:/Html-Css-JS/newad.html'; // جایگزین آدرس واقعی صفحه آگهی خود
 
-        // اضافه کردن رویداد کلیک به دکمه "ثبت آگهی"
-        submitAdButton.addEventListener('click', function () {
-            // انتقال به صفحه آگهی
-            window.location.href = adPageURL;
-        });
-
-        // const showButton = document.getElementById('showButton');
-        // const closeButton = document.getElementById('closeButton');
-        // const overlay = document.getElementById('overlay');
-
-        // showButton.addEventListener('click', function () {
-        //   overlay.style.display = 'flex';
+        // // اضافه کردن رویداد کلیک به دکمه "ثبت آگهی"
+        // submitAdButton.addEventListener('click', function () {
+        //     // انتقال به صفحه آگهی
+        //     window.location.href = adPageURL;
         // });
 
-        // overlay.addEventListener('click', function (event) {
-        //   if (event.target === overlay) {
-        //     overlay.style.display = 'none';
-        //   }
-        // });
-
-        // closeButton.addEventListener('click', function () {
-        //   overlay.style.display = 'none';
-        // });
 
 const showButton = document.getElementById('showButton');
 const overlay = document.getElementById('overlay');
@@ -491,6 +486,33 @@ overlay.addEventListener('click', function (event) {
     }
 });
 
+function toggleFavorite(icon) {
+    icon.classList.toggle("selected");
+}
+const openPopupButton = document.getElementById("openPopup");
+        const closePopupButton = document.getElementById("closePopup");
+        const contactPopup = document.getElementById("contactPopup");
+
+        openPopupButton.addEventListener("click", function() {
+            contactPopup.style.display = "block";
+        });
+
+        closePopupButton.addEventListener("click", function() {
+            contactPopup.style.display = "none";
+        });
+
+        let isContactPopupOpen = false;
+
+contactPopup.addEventListener("mousedown", function() {
+    isContactPopupOpen = true;
+});
+
+window.addEventListener("mousedown", function(event) {
+    if (!isContactPopupOpen && !event.target.matches('.contact-popup, .contact-popup *')) {
+        contactPopup.style.display = "none";
+    }
+    isContactPopupOpen = false;
+});
 
 
     </script>

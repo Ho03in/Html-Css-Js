@@ -8,20 +8,22 @@
 :Root {
   --ff-primary: "vazir", sans-serif;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.container{
-padding: 0;  
+
+.container {
+  padding: 0;
 }
 
 .header {
   font-family: var(--ff-primary);
   width: 95%;
   height: 105px;
-  background-color: rgba(240, 240, 240,0.8);
+  background-color: rgba(240, 240, 240, 0.8);
   padding: 10px 20px 10px 20px;
   border: 1px solid #ccc;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -36,15 +38,14 @@ padding: 0;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 }
-.logo-text a{
+
+.logo-text a {
   font-size: 24px;
   font-weight: bold;
 }
 
 .background-image {
   position: relative;
-
-
   color: #fff;
   /* رنگ متن و محتوای وب‌سایت در پس‌زمینه */
   text-align: center;
@@ -97,11 +98,12 @@ padding: 0;
 .button {
   /*width: 25%;
   height: 30px;
-  */font-family: var(--ff-primary);
+  */
+  font-family: var(--ff-primary);
   margin-top: 60px;
   display: inline-block;
   border-radius: 10px;
-  background-color: rgba(0, 99, 247,0.7);
+  background-color: rgba(0, 99, 247, 0.7);
   border: none;
   color: #FFFFFF;
   text-align: center;

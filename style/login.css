@@ -16,6 +16,10 @@
     border-color: #dee5e5;
     height: 3rem;
     margin-bottom: 1.5rem;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
 }
 .login-form .form form input:focus{
     background-color: gainsboro;
@@ -56,7 +60,7 @@
     margin-top: 1.5rem;
     height: 3rem;
 }
-.span{
+.form-describtion span{
     margin: 0 0.5rem;
 }
 .form #input{
